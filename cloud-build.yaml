@@ -1,0 +1,13 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      [
+        "build",
+        "-f",
+        "Dockerfile",
+        "-t",
+        "gcr.io/cloud-run-test-261314/cloud-run-test",
+        ".",
+      ]
+images:
+  - gcr.io/cloud-run-test-261314/cloud-run-test
